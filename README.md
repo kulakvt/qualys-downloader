@@ -15,3 +15,7 @@ This script requires Qualys API access. To begin, first download a scan history 
 4. Your Qualys password
 
 Credentials are sent over HTTPS, but you should not store your credentials when not using the script. In addition to this information, you may also need to change the API URL provided depending on the location of your Qualys subscription and the file format you would like to download. The call provided will download scans in the extended .csv format, which is similar to the .csv format file you can download manually using the web UI.
+
+## Note
+
+The Qualys API will not respond if an 'X-Requested-With' header is not provided. This header can be modified, but must be sent with the API call.
